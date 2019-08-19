@@ -794,9 +794,9 @@ def open_workbook_2007_xml(zf,
     bk = Book()
     bk.logfile = logfile
     bk.verbosity = verbosity
-    bk.formatting_info = formatting_info
-    if formatting_info:
-        raise NotImplementedError("formatting_info=True not yet implemented")
+    # bk.formatting_info = formatting_info
+    # if formatting_info:
+    #     raise NotImplementedError("formatting_info=True not yet implemented")
     bk.use_mmap = False #### Not supported initially
     bk.on_demand = on_demand
     if on_demand:
